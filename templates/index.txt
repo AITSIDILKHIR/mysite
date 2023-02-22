@@ -1,0 +1,120 @@
+<html lang="en">
+  {%load static %}
+
+<link 
+rel="stylesheet"
+type="text/css"
+href="{%static '/css/bootstrap.css'%}"
+/>
+<link 
+rel="stylesheet"
+type="text/css"
+href="{%static '/css/test.css'%}"
+/>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="{%static '/bootstrap.min.css'%}">
+<link rel="stylesheet" href="{%static '/css/custom.css'%}">
+  </head>
+
+<body>
+  <div class=".masthead" style="background-image: url('./img/images.jpg');">
+    <div class="color-overlay d-flex justify-content-center align-items-center">
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://127.0.0.1:8000/enregistration/">S'enregistrer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/admin/">Invité</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<br>
+  
+
+      <div class="cont">
+          <div class="form sign-in">
+              <h2>Bienvenue</h2>
+              <label>
+                  <span>Email</span>
+                  <input type="email" />
+              </label>
+              <label>
+                  <span>Mot de passe</span>
+                  <input type="password" />
+              </label>
+              <div class="text-center">
+              <a class="text-center"  href="http://127.0.0.1:8000/admin/">Mot de passe oublié?</a>
+            </div>
+              <button type="button" class="submit">Sign In</button>
+           
+          </div>
+          <div class="sub-cont">
+              <div class="img">
+                  <div class="img__text m--up">
+                   
+                      <h3>Vous etes pas client?Merci de s'eregistrer!<h3>
+                  </div>
+                  <div class="img__text m--in">
+                  
+                      <h3>Si vous avez deja un compte, just sign in.<h3>
+                  </div>
+                  <div class="img__btn">
+                      <span class="m--up">Sign Up</span>
+                      <span class="m--in">Sign In</span>
+                  </div>
+              </div>
+              <div class="form sign-up">
+                  <h2>Creer votre compte</h2>
+                  <label>
+                      <span>Nom</span>
+                      <input type="text" />
+                  </label>
+                  <label>
+                    <span>prenom</span>
+                    <input type="text" />
+                </label>
+                <label>
+                  <span>date de naissance</span>
+                  <input type="text" />
+              </label>
+             
+                  <label>
+                      <span>Email</span>
+                      <input type="email" />
+                  </label>
+                  <label>
+                      <span>Password</span>
+                      <input type="password" />
+                  </label>
+                  <button type="button" class="submit">S'enregistrer</button>
+                  <br>
+                  
+              </div>
+          </div>
+      </div>
+  
+      <script>
+          document.querySelector('.img__btn').addEventListener('click', function() {
+              document.querySelector('.cont').classList.toggle('s--signup');
+          });
+      </script>
+</body>
